@@ -1,0 +1,9 @@
+<h1>All Tweets</h1>
+
+<ul>
+  <% @tweets.each do |tweet| %>
+    <li><%= tweet.content %></li>
+  <% end %>
+</ul>
+
+<%= link_to 'Create New Tweet', new_tweet_path %>
